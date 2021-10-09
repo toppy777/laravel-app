@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Shop extends Model
 {
     use HasFactory;
-    public $hidden = ['created_at', 'update_at'];
+    public $hidden = ['created_at', 'updated_at'];
 }
