@@ -35,9 +35,13 @@ class ShopController extends Controller
      * @param  \App\Models\Shop  $shop
      * @return \Illuminate\Http\Response
      */
-    public function show(Shop $shop)
+    public function show($shop_id)
     {
-        //
+        $shop = Shop::find($shop_id);
+        if (is_null($shop)) {
+            return response(['message' => 'Not Found'], 404);
+        }
+        return response($shop, 200);
     }
 
     /**
