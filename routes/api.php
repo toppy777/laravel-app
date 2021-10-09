@@ -19,5 +19,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/2020/shops', [ShopController::class, 'index']);
-Route::get('/2020/shops/{shopId}', [ShopController::class, 'show']);
+Route::prefix('2020')->group(function() {
+    Route::get('/shops', [ShopController::class, 'index']);
+    Route::get('/shops/{shopId}', [ShopController::class, 'show']);
+});
