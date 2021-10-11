@@ -19,9 +19,18 @@ const routes = [
   //     return import(/* webpackChunkName: "about" */ '../views/About.vue')
   //   }
   // }
+
   {
     path: '/',
-    name: 'Shops',
+    name: 'root',
+    component: function() {
+      return import('../views/AllProjectPage.vue')
+    }
+  },
+  /* 2020年度課題 1 */
+  {
+    path: '/2020/1',
+    name: '2020-1',
     component: function() {
       return import('../views/ShopsPage.vue')
     }
