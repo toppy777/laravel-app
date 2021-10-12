@@ -17,6 +17,8 @@ blockquote,
 dl,
 dd {
   margin: 0;
+  font-size: 100%;
+  font-weight: normal;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -70,4 +72,9 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+a {
+  text-decoration: none;
+  color: #000;
 }
