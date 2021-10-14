@@ -1,8 +1,18 @@
 <template>
   <div id="app">
     <router-view/>
+    <Navi></Navi>
   </div>
 </template>
+
+<script>
+import Navi from '@/components/Navi.vue'
+export default {
+  components: {
+    Navi
+  }
+}
+</script>
 
 <style lang="scss">
 #app {

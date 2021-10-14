@@ -34,7 +34,28 @@ const routes = [
     component: function() {
       return import('../views/ShopsPage.vue')
     }
-  }
+  },
+  {
+    path: '/2020/1/cart',
+    name: '2020-1-cart',
+    component: function() {
+      return import('../views/CartPage.vue')
+    }
+  },
+  {
+    path: '/2020/1/order-log',
+    name: '2020-1-order_log',
+    component: function() {
+      return import('../views/OrderLogPage.vue')
+    }
+  },
+  {
+    path: '/2020/1/others',
+    name: '2020-1-others',
+    component: function() {
+      return import('../views/OthersPage.vue')
+    }
+  },
 ]
 
 const router = new VueRouter({
