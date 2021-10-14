@@ -26,6 +26,12 @@ export default {
 </script>
 
 <style lang="scss">
+$str-color: #4b4b4b;
+
+  .icon {
+    font-size: 1.6rem;
+    color: $str-color;
+  }
 
 .nav {
   display: flex;
@@ -50,7 +56,10 @@ export default {
   }
 
   & .router-link-exact-active {
-    color: orange;
+    color: rgb(218, 105, 0);
+    & .icon {
+      color: orange;
+    }
   }
 }
 
@@ -62,11 +71,9 @@ export default {
   flex-direction: column;
   align-items: center;
   height: 5vh;
+  color: $str-color;
 }
 
-.icon {
-  font-size: 1.5rem;
-}
 
 
 
